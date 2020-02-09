@@ -56,10 +56,20 @@
           <section>
               <h1>Перфораторы</h1>
               <section>
-                <h2>Фильтр товаров</h2>
-                <form class="" action="https://echo.htmlacademy.ru/" method="get">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="" action="https://echo.htmlacademy.ru/" method="get" oninput="result-min.value=price-range-min.value" oninput="result-max.value=price-range-max.value">
                   <fieldset>
-                    <!--Фильтр по цене-->
+                    <legend>Фильтр:</legend>
+                    <label for="price-range">Цена:</label>
+                    <input type="range" name="min-price" value="" min="0" max="50000" id="price-range-min">
+                    <input type="range" name="max-price" value="" min="0" max="50000" id="price-range-max">
+                    <div class="output-area">
+                      <output name="result-min"></output>
+                    </div>
+                    <span>-</span>
+                    <div class="output-area">
+                      <output name="result-max"></output>
+                    </div>
                   </fieldset>
                   <fieldset>
                     <legend>Производители:</legend>
@@ -113,12 +123,21 @@
                       </li>
                     </ul>
                   </fieldset>
-                  <button type="submit" name="button" value="" label="Показать">
+                  <button type="submit" name="button" value="">Показать</button>
                 </form>
-              </aside>
-              <div class="">
+              </section>
+              <section class="">
                 <div class="">
-                  <!--Сортировка-->
+                  <h3>Сортировка:</h3>
+                  <ul>
+                    <li><button type="button" name="price">По цене</button></li>
+                    <li><button type="button" name="type">По типу</button></li>
+                    <li><button type="button" name="func">По функционалу</button></li>
+                    <li>
+                      <button type="button" name="up" aria-label="стрелка увеличение"></button>
+                      <button type="button" name="down" aria-label="стрелка уменьшение"></button>
+                    </li>
+                  </ul>
                 </div>
                 <ul>
                     <li>
@@ -227,14 +246,14 @@
               </ul>
           </div>
           <div>
-              <p>© 2010–2019 Компания «Техномарт»<br/>Все права защищены</p>
+              <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
               <ul>
                   <li><a href="#">vk</a></li>
                   <li><a href="#">fb</a></li>
                   <li><a href="#">insta</a></li>
               </ul>
-              <p>Обратная связь:<br/><a href="#">mail@htmlacademy.ru</a></p>
-              <p>Разработано —<br/><a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+              <p>Обратная связь:<a href="#">mail@htmlacademy.ru</a></p>
+              <p>Разработано —<a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
           </div>
       </footer>
       <div class="">
