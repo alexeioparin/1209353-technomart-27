@@ -1,0 +1,389 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #32425c;
+  background-color: grey;
+  background-position: top center;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+                                                    /*buttons*/
+.button {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.button-user {
+  font-family: inherit;
+  background-color: #ffffff;
+  color: black;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+}
+.button-user:hover {
+  color: #ee3643;
+}
+.button-user:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.button-catalog {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #ffffff;
+  border: solid 1px #e5e5e5;
+}
+
+.button-catalog:hover {
+  border-color: #bdc6ca;
+}
+
+.button-catalog:active {
+  border-color: #ee3643;
+}
+
+.button-buy {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.button-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.button-buy:active {
+  background-color: #518534;
+}
+
+.button-bookmarks {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  background-color: #ffffff;
+  border: solid 3px #63a63e;
+}
+
+.button-bookmarks:hover {
+  border-color: #32425c;
+}
+
+.button-bookmarks:active {
+  opacity: 0.3;
+}
+                                                      /*index-header*/
+.header {
+  font-size: 14px;
+  line-height: 24px;
+  background-color: #f4f7f9;
+}
+
+.user-menu {
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.logo {
+  background-color: #ee3643;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.user-menu input {
+  background-color: inherit;
+  border: none;
+}
+
+.user-search input:hover,
+.user-actions a:hover
+{
+  background-color: #212a3a;
+}
+
+.user-search input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.user-actions a:active {
+  background-color: #161d29;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.complete {
+  background-color: #63a63e;
+}
+
+a.complete:hover {
+  background-color: #5fbb2d;
+}
+
+a.complete:active {
+  background-color: #518534;
+}
+
+.user-menu ul {
+  list-style: none;
+}
+
+.user-menu a {
+  color: #ffffff;
+}
+
+.header-main>p {
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
+}
+
+.phone a,
+.phone span
+{
+  text-align: center;
+}
+
+.phone a {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: solid 3px #ffffff;
+}
+
+.nav,
+.nav a
+ {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.nav {
+  border-bottom: solid 4px #293449;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.nav a:hover {
+  background-color: #293449;
+}
+
+.nav a:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+                                                       /*index-main*/
+.main {
+  background-color: #ffffff;
+}
+
+.delivery {
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  background-color: #ffffff;
+}
+
+.delivery h3 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.delivery p {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+                                                   /*index-footer*/
+.footer {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.second-line a {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+}
+
+.footer-bottom a {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+.footer-bottom a:active {
+  color: #ee3643;
+  opacity: 1;
+}
+
+                                              /*Catalog*/
+
+.cart-full {
+  background-color: #ee3643;
+}
+
+.login-list li:first-child{
+  list-style: none;
+}
+
+.login-list a {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.login-list a:hover {
+  color: #ee3643;
+}
+
+.login-list a:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+                                              /*catalog-main*/
+.bread-crumbs,
+.bread-crumbs a
+ {
+  font-family:  'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-filter {
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
+.catalog-filter fieldset {
+  border: none;
+}
+
+.catalog-filter legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.catalog-filter label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.catalog-filter label:active {
+  opacity: 0.4;
+}
+
+.catalog-filter ul {
+  list-style: none;
+}
+
+.catalog-list {
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.catalog-list li {
+  border: solid 1px #e5e5e5;
+}
+
+.catalog-list span {
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+}
+
+.catalog-list span:last-of-type {
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+}
+
+span.label-new {
+  color: #ffffff;
+  background-color: #ee3643;
+  text-decoration: none;
+}
+
+.invisible {
+  display: none;
+}
