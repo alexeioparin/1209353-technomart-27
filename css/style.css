@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  padding: 0;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 20px;
   font-weight: 400;
   color: #32425c;
-  background-color: grey;
+  background-color: #c5c5c5;
   background-position: top center;
 }
 
@@ -14,13 +13,7 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  text-transform: uppercase;
-  background-color: #f2f6f8;
-}
+
                                                     /*buttons*/
 .button {
   font-family: inherit;
@@ -43,7 +36,7 @@ h1 {
 .button-user {
   font-family: inherit;
   background-color: #ffffff;
-  color: black;
+  color: #000000;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -220,6 +213,14 @@ a.complete:active {
                                                        /*index-main*/
 .main {
   background-color: #ffffff;
+}
+
+.main h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
 }
 
 .delivery {
