@@ -29,11 +29,15 @@ a {
 }
 
 .container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.container-column {
   width: 980px;
   margin: 0 auto;
   padding: 0 20px;
-  display: flex;
-  align-items: center;
 }
 
 
@@ -166,6 +170,12 @@ a {
   font-size: 17px;
   line-height: 18px;
   background-color: #293449;
+
+}
+
+.user-menu-line {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -240,6 +250,7 @@ a.complete:active {
 .header-main {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   margin-top: 47px;
   margin-bottom: 40px;
 }
@@ -250,6 +261,7 @@ a.complete:active {
   font-style: italic;
   color: #ee3643;
   width: 200px;
+  margin: 0;
 }
 
 .phone {
@@ -293,9 +305,7 @@ a.complete:active {
 .nav {
   border-bottom: solid 4px #293449;
   width: 940px;
-  margin: 0 auto;
   padding: 0;
-
 }
 
 .nav-list {
@@ -305,6 +315,14 @@ a.complete:active {
   align-items: center;
   padding: 0;
   margin: 0;
+  width: 100%
+}
+
+.nav-list a {
+  display: block;
+  height: 60px;
+  text-align: center;
+  padding-top: 22px;
 }
 
 .nav-list li {
@@ -317,11 +335,11 @@ a.complete:active {
   padding-top: 22px;
 }
 
-.nav a:hover div {
+.nav a:hover {
   background-color: #293449;
 }
 
-.nav a:active div{
+.nav a:active{
   background-color: #1d2739;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -467,18 +485,11 @@ a.complete:active {
 
 .delivery .delivery-ways {
   width: 520px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 455px;
 }
 
 .delivery .contacts {
   width: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 455px;
 }
 
 .delivery-ways ul {
@@ -551,6 +562,7 @@ a.complete:active {
 }
 
 .foot-top {
+  display: flex;
   justify-content: space-between;
   align-items: flex-end;
   margin-bottom: 30px;
@@ -605,6 +617,11 @@ a.complete:active {
 .footer-bottom .container {
   padding-top: 35px;
   padding-bottom: 30px;
+}
+
+.footer-bottom-line {
+  display: flex;
+  align-items: center;
 }
 
 .footer-bottom p {
@@ -707,8 +724,9 @@ ul.social {
 }
 
 .bread-crumbs {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
+  margin: 0;
+  display: flex;
 }
 
 .bread-crumbs li{
@@ -758,7 +776,7 @@ fieldset.range-bar legend {
   width: 980px;
 }
 
-.catalog h1 {
+.main h1 {
   width: 100%;
   padding: 30px;
   margin-bottom: 20px;
