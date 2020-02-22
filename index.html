@@ -35,8 +35,8 @@
                   <p><a href="registry.html" class="button-user">Регистрация</a></p>
               </div>
           </div>
-          <nav class="nav container">
-              <ul class="nav-list">
+          <nav class="container">
+              <ul class="nav nav-list">
                   <li><a>Главная</a></li>
                   <li><a href="company.html">Компания</a></li>
                   <li><a href="catalog.html">Каталог</a></li>
@@ -48,31 +48,32 @@
           </nav>
       </header>
       <main class="main">
+        <div class="container">
           <h1 class="visually-hidden">Предложения и популярные товары</h1>
           <section>
               <h2 class="visually-hidden">Каталог предложений</h2>
               <ul class="offers-list">
                   <li>
-                          <h3>Материалы</h3>
-                          <a href="materials-shop.html" class="button-offers-list">На любой вкус</a>
-                          <span class="label-new">New</span>
+                      <h3>Материалы</h3>
+                      <a href="materials-shop.html" class="button-offers-list">На любой вкус</a>
+                      <span class="label-new">New</span>
                   </li>
                   <li>
-                          <h3>Инструмент</h3>
-                          <a href="#" class="button-offers-list">На все случаи</a>
+                      <h3>Инструмент</h3>
+                      <a href="#" class="button-offers-list">На все случаи</a>
                   </li>
                   <li>
-                          <h3>Техника</h3>
-                          <a href="#" class="button-offers-list">Для стройки</a>
+                      <h3>Техника</h3>
+                      <a href="#" class="button-offers-list">Для стройки</a>
                   </li>
                   <li class="main-slider">
                       <div>
-                          <h3>Дрели</h3>
-                          <span>Соседям на радость!</span>
+                          <h3 class="visually-hidden">Дрели</h3>
+                          <span class="visually-hidden">Соседям на радость!</span>
                           <img src="img/slider-image1.jpg" alt="Мужик с дрелью">
                           <a href="catalog.html" class="button">Открыть каталог</a>
                       </div>
-                      <div>
+                      <div class="visually-hidden">
                           <h3>Перфораторы</h3>
                           <span>Настоящие мужские игрушки</span>
                           <img src="img/slider-image2.jpg" alt="Мужик с перфоратором">
@@ -83,19 +84,23 @@
                         <button type="button" name="button-right"></button>
                       </div>
                   </li>
-                  <li>
-                          <h3>Скидки 50%</h3>
-                          <a href="#" class="button-offers-list">На 350 товаров</a>
-                  </li>
-                  <li>
-                          <h3>Доставка</h3>
-                          <a href="#" class="button-offers-list">Бесплатно</a>
+                  <li class="last-block">
+                    <div class="">
+                      <h3>Скидки 50%</h3>
+                      <a href="#" class="button-offers-list">На 350 товаров</a>
+                    </div>
+                    <div class="">
+                      <h3>Доставка</h3>
+                      <a href="#" class="button-offers-list">Бесплатно</a>
+                    </div>
                   </li>
               </ul>
           </section>
           <section class="products">
+            <div class="products-top">
               <h2>Популярные товары:</h2>
               <a href="#" class="button">Все популярные товары</a>
+            </div>
               <ul class="catalog-list">
                   <li>
                       <h3>Перфоратор <span class="uppercase">bosch bfg 9000</span></h3>
@@ -132,8 +137,10 @@
               </ul>
           </section>
           <section class="producers">
+            <div class="producers-top">
               <h2>Популярные производители:</h2>
               <a href="#" class="button">Все производители:</a>
+            </div>
               <ul class="producers-list">
                   <li><a href="#" aria-label="bosch"><img src="img/bosch.png" alt="bosch" width="126" height="37"></a></li>
                   <li><a href="#" aria-label="makita"><img src="img/makita.png" alt="makita" width="123" height="40"></a></li>
@@ -156,18 +163,15 @@
               <div>
                   <h3>Доставка</h3>
                   <p>Мы с удовольствием доставим ваш товар прямо<br/>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br/>поднимая его на ваш этаж!</p>
-
               </div>
               <div>
                   <h3>Гаранития</h3>
                   <p>Если купленный у нас товар поломается или заискрит,<br/>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br/>Дом уж восстановите как-нибудь сами.</p>
-
               </div>
               <div>
                   <h3>Кредит</h3>
                   <p>Залезть в долговую яму стало проще!<br/>Кредитные консультанты придут вам на помощь.</p>
                   <a href="credit.html" class="button">Отправить заявку</a>
-
               </div>
           </section>
           <section class="delivery container">
@@ -191,6 +195,8 @@
                   <a href="mail.html" class="button">Заблудились? Напишите нам!</a>
               </div>
           </section>
+        </div>
+
       </main>
       <footer class="footer">
           <div class="foot-top container">
