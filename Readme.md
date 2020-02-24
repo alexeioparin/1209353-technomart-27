@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей](https://up.htmlacademy.ru/htmlcss/27/user/1209353).
-* Наставник: [Андрей Грачёв](https://htmlacademy.ru/profile/id252055).
+* Наставник: [Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
