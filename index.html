@@ -10,18 +10,22 @@
   <body>
       <header class="header">
           <div class="user-menu">
-            <div class="container user-menu-line">
-              <a class="logo"><img src="img/logo.png" alt="Логотип" width="109px" height="19px"></a>
-              <form class="user-search" action="https://echo.htmlacademy.ru/" method="get">
-                <label>
-                  <input type="search" name="search" value="" placeholder="Поиск:" autofocus class="search-input">
-                </label>
-              </form>
-              <ul class="user-actions">
-                  <li><a href="bookmarks.html">Закладки:</a></li>
-                  <li><a href="cart.html">Корзина:</a></li>
-                  <li><a href="complete.html" class="complete">Оформить заказ</a></li>
-              </ul>
+            <div class="container ">
+              <div class="user-menu-line">
+                <a class="logo">
+                  <img src="img/logo.png" alt="Логотип" width="109px" height="19px">
+                </a>
+                <form class="user-search" action="https://echo.htmlacademy.ru/" method="get">
+                  <label>
+                    <input type="search" name="search" value="" placeholder="Поиск:" class="search-input">
+                  </label>
+                </form>
+                <ul class="user-actions">
+                    <li class="action-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
+                    <li class="action-cart"><a href="cart.html">Корзина:</a></li>
+                    <li><a href="complete.html" class="complete">Оформить заказ</a></li>
+                </ul>
+              </div>      
             </div>
           </div>
           <div class="header-main container">
@@ -31,7 +35,19 @@
                   <span>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
               </div>
               <div class="user-logout">
-                  <p><a href="login.html" class="button-user">Войти</a></p>
+                  <p>
+                    <a href="login.html" class="button-user button-user-enter">
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                      	 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+                      <g>
+                      	<polygon fill="#c5c5c5" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
+                      	<path fill="#c5c5c5" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
+                      		v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                      </g>
+                      </svg>
+                      <span>Войти</span>
+                    </a>
+                  </p>
                   <p><a href="registry.html" class="button-user">Регистрация</a></p>
               </div>
           </div>
@@ -274,9 +290,24 @@
             <div class="container footer-bottom-line">
               <p>© 2010–2019 Компания «Техномарт» Все права защищены</p>
               <ul class="social">
-                  <li><a href="#">vk</a></li>
-                  <li><a href="#">fb</a></li>
-                  <li><a href="#">insta</a></li>
+                  <li>
+                    <a href="#">
+                      <span class="visually-hidden">Вконтакте</span>
+                      <img src="img/vk.svg" alt="" width="26" height="15">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="visually-hidden">Facebook</span>
+                      <img src="img/fb.svg" alt="" width="12" height="22">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <span class="visually-hidden">Instagram</span>
+                      <img src="img/insta.svg" alt="" width="21" height="21">
+                    </a>
+                  </li>
               </ul>
               <p>Обратная связь: <a href="#">mail@htmlacademy.ru</a></p>
               <p>Разработано — <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
