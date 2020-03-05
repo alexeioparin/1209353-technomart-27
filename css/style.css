@@ -105,6 +105,10 @@ a {
   fill: #32425C;
 }
 
+.button-user-reg {
+  padding-left: 25px;
+}
+
 .button-catalog {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
@@ -404,6 +408,11 @@ a.complete:active {
   margin-left: 10px;
 }
 
+.user-logout a {
+  display: inline-block;
+  padding-right: 25px;
+}
+
 .nav,
 .nav a
  {
@@ -506,6 +515,11 @@ a.complete:active {
   margin: 0;
   margin-top: 25px;
   margin-bottom: 15px;
+}
+
+.offers-list div {
+  position: relative;
+  overflow: hidden;
 }
 
 .offers-list-first {
@@ -1464,6 +1478,7 @@ article.catalog-card span.uppercase {
   text-align: left;
   margin: 0;
   margin-bottom: 30px;
+  font-weight: 400;
 }
 
 .about-tool p {
