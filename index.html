@@ -75,29 +75,31 @@
                   <div>
                       <h3>Материалы</h3>
                       <a href="materials-shop.html" class="button-offers-list">На любой вкус</a>
-                      <span class="label-new">New</span>
+                      <span class="label-new">new</span>
                   </div>
                   <div>
                       <h3>Инструмент</h3>
                       <a href="#" class="button-offers-list">На все случаи</a>
                   </div>
                   <div class="main-slider">
-                      <div>
-                          <h3 class="visually-hidden">Дрели</h3>
-                          <span class="visually-hidden">Соседям на радость!</span>
-                          <img src="img/slider-image1.jpg" alt="Мужик с дрелью">
+                    <input type="radio" name="tools-slide" value="drill" id="slide-1-1" checked>
+                    <input type="radio" name="tools-slide" value="perf" id="slide-1-2">
+                    <div class="tools-slides">
+                      <div class="drill-slide">
+                          <h3>Дрели</h3>
+                          <span class="">Соседям на радость!</span>
                           <a href="catalog.html" class="button">Открыть каталог</a>
                       </div>
-                      <div class="visually-hidden">
+                      <div class="perf-slide">
                           <h3>Перфораторы</h3>
                           <span>Настоящие мужские игрушки</span>
-                          <img src="img/slider-image2.jpg" alt="Мужик с перфоратором">
                           <a href="catalog.html" class="button">Открыть каталог</a>
                       </div>
-                      <div class="">
-                        <button type="button" name="button-left"></button>
-                        <button type="button" name="button-right"></button>
-                      </div>
+                    </div>
+                    <div class="tools-controls">
+                      <label for="slide-1-1"></label>
+                      <label for="slide-1-2"></label>
+                    </div>
                   </div>
                 </div>
                 <div class="last-block">
@@ -151,14 +153,14 @@
                       <img src="img/perforator_3.jpg" alt="Малый перфоратор" width="218" height="170">
                       <a href="cart.html" class="button-buy">Купить</a>
                       <a href="bookmarks.html" class="button-bookmarks">Закладки</a>
-                      <span class="label-new">New</span>
+                      <span class="label-new">new</span>
                       <span>25500 Р.</span>
                   </article>
               </div>
           </section>
           <section class="producers">
             <div class="producers-top">
-              <h2>Популярные производители:</h2>
+              <h2>Популярные производители</h2>
               <a href="#" class="button">Все производители:</a>
             </div>
               <ul class="producers-list">
@@ -218,26 +220,42 @@
             <h2>Сервисы</h2>
             <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
             <div class="service-list">
-              <ul>
-                  <li>Доставка</li>
-                  <li>Гарантия</li>
-                  <li>Кредит</li>
-              </ul>
-              <div class="service-delivery visually-hidden">
-                  <h3>Доставка</h3>
-                  <p>Мы с удовольствием доставим ваш товар прямо<br/>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br/>поднимая его на ваш этаж!</p>
+              <div class="controls">
+                <ul class="">
+                    <li>
+                      <label for="slide-2-1">Доставка</label>
+                    </li>
+                    <li>
+                      <label for="slide-2-2">Гарантия</label>
+                    </li>
+                    <li>
+                      <label for="slide-2-3">Кредит</label>
+                    </li>
+                </ul>
               </div>
-              <div class="service-garanty visually-hidden">
-                  <h3>Гаранития</h3>
-                  <p>Если купленный у нас товар поломается или заискрит,<br/>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br/>Дом уж восстановите как-нибудь сами.</p>
+              <div class="slider-container">
+                <input type="radio" name="service" value="delivery" id="slide-2-1" checked>
+                <input type="radio" name="service" value="garanty" id="slide-2-2">
+                <input type="radio" name="service" value="credit" id="slide-2-3">
+                <div class="slides">
+                  <div class="service-delivery slider">
+                      <h3>Доставка</h3>
+                      <p>Мы с удовольствием доставим ваш товар прямо<br/>к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br/>поднимая его на ваш этаж!</p>
+                  </div>
+                  <div class="service-garanty slider">
+                      <h3>Гаранития</h3>
+                      <p>Если купленный у нас товар поломается или заискрит,<br/>а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br/>Дом уж восстановите как-нибудь сами.</p>
+                  </div>
+                  <div  class="service-credit slider">
+                      <h3>Кредит</h3>
+                      <p>Залезть в долговую яму стало проще!<br/>Кредитные консультанты придут вам на помощь.</p>
+                      <a href="credit.html" class="button">Отправить заявку</a>
+                  </div>
+                </div>
               </div>
-              <div  class="service-credit">
-                  <h3>Кредит</h3>
-                  <p>Залезть в долговую яму стало проще!<br/>Кредитные консультанты придут вам на помощь.</p>
-                  <a href="credit.html" class="button">Отправить заявку</a>
-              </div>
-            </div>
 
+
+            </div>
           </div>
         </section>
         <div class="container">

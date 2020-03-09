@@ -179,11 +179,15 @@ a {
 }
 
 .button-offers-list {
+  display: inline-block;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 38px;
   color: #ffffff;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
+  width: 135px;
+  height: 38px;
+  text-align: center;
 }
 
 .button-offers-list:hover {
@@ -522,6 +526,15 @@ a.complete:active {
   overflow: hidden;
 }
 
+.offers-list .label-new {
+  top: 5px;
+  right: -55px;
+  padding: 0;
+  background-color: #ff5358;
+  line-height: 25px;
+  font-family: 'PT Sans', Arial, sans-serif;
+}
+
 .offers-list-first {
   width: 620px;
   display: flex;
@@ -536,27 +549,122 @@ a.complete:active {
   margin-bottom: 20px;
 }
 
+.offers-list-first>div::after {
+  position: absolute;
+  bottom: 20px;
+}
+
 .offers-list-first>div:first-child {
   background-color: #ffbf47;
+}
+
+.offers-list-first>div:first-child::after {
+  content: url(../img/can.png);
+  right: 43px;
 }
 
 .offers-list-first>div:nth-child(2) {
   background-color: #3bbce3;
 }
 
+.offers-list-first>div:nth-child(2)::after {
+  content: url(../img/tool.png);
+  right: 27px;
+}
+
 div.main-slider {
   padding: 0;
+}
+
+.main-slider {
+  position: relative;
+  width: 620px;
+  height: 266px;
+}
+
+.main-slider div {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .main-slider h3 {
   font-size: 36px;
   line-height: 36px;
+  margin-top: 22px;
+  margin-left: 24px;
+  margin-bottom: 0px;
   text-transform: uppercase;
 }
 
 .main-slider span {
+  display: inline-block;
   font-size: 18px;
-  line-height: 24px;
+  font-weight: 400;
+  margin-left: 0;
+  margin-left: 25px;
+}
+
+.main-slider a {
+  width: 195px;
+  position: absolute;
+  left: 25px;
+  bottom: 22px;
+}
+
+.main-slider input {
+  display: none;
+}
+
+.tools-slides div {
+  position: absolute;
+  overflow: auto;
+  opacity: 0;
+  z-index: 0;
+}
+
+.tools-slides div:first-child {
+  background-image: url(../img/slider-image1.jpg);
+}
+
+.tools-slides div:last-child {
+  background-image: url(../img/slider-image2.jpg);
+}
+
+.main-slider .tools-controls {
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.tools-controls label {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 114px;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.tools-controls label:first-child {
+  left: 30px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.tools-controls label:last-child {
+  right: 30px;
+  border-right: 2px solid #ffffff;
+  border-top: 2px solid #ffffff;
+}
+
+#slide-1-1:checked ~ .tools-slides .drill-slide,
+#slide-1-2:checked ~ .tools-slides .perf-slide {
+  opacity: 1;
+  z-index: 1;
 }
 
 .last-block {
@@ -574,6 +682,12 @@ div.main-slider {
   height: 123px;
   padding-left: 23px;
   padding-top: 25px;
+  position: relative;
+}
+
+.last-block div::after {
+  position: absolute;
+  bottom: 20px;
 }
 
 .last-block div:first-child {
@@ -581,13 +695,28 @@ div.main-slider {
   margin-bottom: 20px;
 }
 
+.last-block div:first-child::after {
+  content: url(../img/tractor.png);
+  right: 31px;
+}
+
 .last-block div:nth-child(2) {
   background-color: #8ed78f;
   margin-bottom: 20px;
 }
 
+.last-block div:nth-child(2)::after {
+  content: url(../img/cart-big.png);
+  right: 45px;
+}
+
 .last-block div:last-child {
   background-color: #ffc047;
+}
+
+.last-block div:last-child::after {
+  content: url(../img/truck.png);
+  right: 31px;
 }
 
 .products-top,
@@ -597,6 +726,11 @@ div.main-slider {
   padding: 30px;
   background-color: #f9f5f0;
   margin-bottom: 20px;
+}
+
+.products-top a,
+.producers-top a {
+  width: 253px;
 }
 
 .products ul {
@@ -684,18 +818,42 @@ div.main-slider {
   margin-right: 80px;
 }
 
-.service-list li {
+.service-list label {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   background-color: #32425c;
   padding: 22px;
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
 }
 
-.service-list li:hover {
+.service-list label:hover {
   color: #32425c;
   background-color: #ffffff;
+}
+
+.slider-container input {
+  display: none;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slider {
+  position: absolute;
+  opacity: 0;
+  z-index: 0;
+}
+
+#slide-2-1:checked ~ .slides .service-delivery,
+#slide-2-2:checked ~ .slides .service-garanty,
+#slide-2-3:checked ~ .slides .service-credit {
+  opacity: 1;
+  z-index: 1;
 }
 
 .service-list h3 {
@@ -712,17 +870,49 @@ div.main-slider {
   margin: 0;
 }
 
+.service-delivery,
+.service-garanty,
+.service-credit {
+  position: relative;
+}
+
 .service-delivery p {
   width: 275px;
+  position: relative;
+}
+
+.service-delivery p::after {
+  content: url(../img/truck-fs.png);
+  position: absolute;
+  right: -340px;
+  top: -10px;
 }
 
 .service-garanty p {
   width: 380px;
 }
 
+.service-garanty p::after {
+  content: url(../img/guarantee.png);
+  position: absolute;
+  right: -250px;
+  top: 30px;
+}
+
 .service-credit p {
   width: 280px;
   margin-bottom: 30px;
+}
+
+.service-credit p::after {
+  content: url(../img/credit.png);
+  position: absolute;
+  right: -340px;
+  top: 30px;
+}
+
+.service-credit a {
+  width: 195px;
 }
 
 .about {
@@ -1103,13 +1293,44 @@ fieldset.range-bar legend {
 }
 
 .erange-main {
+  position: relative;
   background-color: #f7f3ec;
   height: 80px;
   margin-bottom: 9px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 20px;
+}
+
+.range-line-left {
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: green;
+}
+
+.range-line-right {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  right: 20px;
+  background-color: grey;
+}
+
+.erange-main button {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: #000000;
+  border: 9px solid #ffffff;
+  z-index: 2;
+
+}
+
+.erange-main button:first-of-type {
+  margin-right: 120px;
 }
 
 .output {
@@ -1337,10 +1558,29 @@ fieldset.range-bar legend {
   border-bottom: solid 1px #ee3643;
 }
 
+.sort-panel a:hover polygon,
+.sort-panel a:hover polyline {
+  fill: #000000;
+}
+
 .sort-panel a:active {
   color: #ee3643;
   opacity: 1;
   border: none;
+}
+
+.sort-panel a:active polygon,
+.sort-panel a:active polyline {
+  fill: #ee3643;
+}
+
+.sort-panel-list .sort-arrow,
+.sort-panel-list .sort-arrow:hover {
+  border-bottom: none;
+}
+
+.sort-arrow:last-of-type {
+  margin-left: 20px;
 }
 
 .catalog-list {
