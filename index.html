@@ -13,7 +13,7 @@
             <div class="container ">
               <div class="user-menu-line">
                 <a class="logo">
-                  <img src="img/logo.png" alt="Логотип" width="109px" height="19px">
+                  <img src="img/logo.png" alt="Логотип" width="109" height="19">
                 </a>
                 <form class="user-search" action="https://echo.htmlacademy.ru/" method="get">
                   <label>
@@ -21,8 +21,8 @@
                   </label>
                 </form>
                 <ul class="user-actions">
-                    <li class="action-bookmarks"><a href="bookmarks.html">Закладки:</a></li>
-                    <li class="action-cart"><a href="cart.html">Корзина:</a></li>
+                    <li class="action-bookmarks"><a href="bookmarks.html">Закладки: 0</a></li>
+                    <li class="action-cart"><a href="cart.html">Корзина: 0</a></li>
                     <li><a href="complete.html" class="complete">Оформить заказ</a></li>
                 </ul>
               </div>
@@ -38,12 +38,12 @@
                   <p>
                     <a href="login.html" class="button-user button-user-enter">
                       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      	 width="21px" height="17px" viewBox="0 0 21 17" enable-background="new 0 0 21 17" xml:space="preserve">
+                      	 width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
                       <g>
-                      	<polygon fill="#c5c5c5" points="21,8.5 12.125,0 12.125,6 6.125,6 6.125,11 12.125,11 12.125,17 	"/>
-                      	<path fill="#c5c5c5" d="M3.106,13.952V3.048c0.018-0.376,0.171-1.057,1.01-1.057h5.027V0H4.116C1.938,0,1.112,1.81,1.087,3.027
-                      		v10.946C1.112,15.189,1.938,17,4.116,17h5.027v-1.99H4.116C3.277,15.01,3.124,14.327,3.106,13.952z"/>
+                      	<polygon fill="#c5c5c5" points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 	"/>
                       </g>
+                      <path fill="#c5c5c5" d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+                      	v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z"/>
                       </svg>
                       <span>Войти</span>
                     </a>
@@ -56,7 +56,7 @@
           <nav class="container">
               <ul class="nav nav-list">
                   <li><a>Главная</a></li>
-                  <li><a href="company.html">Компания</a></li>
+                  <li><a href="company.html" class="company-a">Компания</a></li>
                   <li><a href="catalog.html">Каталог</a></li>
                   <li><a href="news.html">Новости</a></li>
                   <li><a href="special.html">Спецпредложения</a></li>
@@ -100,6 +100,10 @@
                           <label for="slide-1-1"></label>
                       </div>
                     </div>
+                    <div class="slide-controls">
+                      <label for="slide-1-1"></label>
+                      <label for="slide-1-1"></label>
+                    </div>
                   </div>
                 </div>
                 <div class="last-block">
@@ -132,7 +136,7 @@
                         <a href="bookmarks.html" class="button-bookmarks">Закладки</a>
                       </div>
                       <span class="label-new visually-hidden">new</span>
-                      <span>32500 Р.</span>
+                      <span class="price-old">32500 Р.</span>
                       <span class="price-new">25500 Р.</span>
                   </article>
                   <article class="catalog-card">
@@ -143,7 +147,7 @@
                         <a href="bookmarks.html" class="button-bookmarks">Закладки</a>
                       </div>
                       <span class="label-new visually-hidden">new</span>
-                      <span>22500 Р.</span>
+                      <span class="price-old">22500 Р.</span>
                       <span class="price-new">15500 Р.</span>
                   </article>
                   <article class="catalog-card">
@@ -154,7 +158,7 @@
                         <a href="bookmarks.html" class="button-bookmarks">Закладки</a>
                       </div>
                       <span class="label-new visually-hidden">new</span>
-                      <span>30500 Р.</span>
+                      <span class="price-old">30500 Р.</span>
                       <span class="price-new">25500 Р.</span>
                   </article>
                   <article class="catalog-card">
@@ -171,7 +175,7 @@
           </section>
           <section class="producers">
             <div class="producers-top">
-              <h2>Популярные производители</h2>
+              <h2>Популярные производители:</h2>
               <a href="#" class="button">Все производители:</a>
             </div>
               <ul class="producers-list">
@@ -202,7 +206,7 @@
                   <li>
                     <a href="#">
                       <span class="visually-hidden">Компания hitachi</span>
-                      <img src="img/hitachi.png" alt="hitachi" width="169" height="31">
+                      <img src="img/hitachi.png" alt="hitachi" width="169" height="35">
                     </a>
                   </li>
                   <li>
@@ -220,7 +224,7 @@
                   <li>
                     <a href="#">
                       <span class="visually-hidden">Компания metabo</span>
-                      <img src="img/metabo.png" alt="metabo" width="204" height="69">
+                      <img src="img/metabo.png" alt="metabo" width="204" height="75">
                     </a>
                   </li>
               </ul>
@@ -299,7 +303,7 @@
       </main>
       <footer class="footer">
           <div class="foot-top container">
-              <a class="logo"><img src="img/logo.png" alt="Логотип" width="138px" height="23px"></a>
+              <a class="logo"><img src="img/logo.png" alt="Логотип" width="138" height="23"></a>
               <ul class="foot-top-list">
                   <li><a href="technomart.html">Компания</a></li>
                   <li><a href="news.html">Новости</a></li>
@@ -309,7 +313,7 @@
               </ul>
           </div>
           <div class="foot-middle container">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
+              <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555">+7 (812) 555-05-55</a></p>
               <ul class="second-line">
                   <li><a href="materials-shop.html">Материалы</a></li>
                   <li><a href="tec-shop.html">Техника</a></li>
@@ -346,6 +350,7 @@
           </div>
       </footer>
       <section class="modal modal-login">
+        <h2 class="visually-hidden">Форма логина</h2>
         <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="login-form-main">
             <label>
@@ -362,7 +367,7 @@
             </label>
           </div>
           <div class="login-form-bottom">
-            <input type="submit" name="button" value="Отправить" label="" class="button">
+            <input type="submit" name="button" value="Отправить" class="button">
           </div>
         </form>
         <button type="button" name="close-window" class="modal-close">
@@ -370,7 +375,7 @@
         </button>
       </section>
       <div class="modal modal-map">
-        <img src="img/map3.png" alt="адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="970px" height="476px">
+        <img src="img/map3.png" alt="адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="970" height="476">
         <button type="button" name="close-window" class="modal-close"></button>
       </div>
   </body>
