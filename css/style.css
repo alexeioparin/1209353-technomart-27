@@ -1957,6 +1957,8 @@ span.label-new {
   z-index: 5;
 }
 
+
+
 .modal-login {
   display: none;
   width: 620px;
@@ -2073,6 +2075,7 @@ label.login-textarea {
 
 .modal-close::after {
   transform: rotate(-45deg);
+  top: 8px;
 }
 
 .modal-buy {
@@ -2120,4 +2123,8 @@ label.login-textarea {
   text-align: center;
   height: 38px;
   border-radius: 3px;
+}
+
+.modal-show {
+  display: block;
 }
