@@ -2065,6 +2065,20 @@ label.login-textarea {
   height: 476px;
 }
 
+.modal-map p,
+.modal-map iframe {
+  position: absolute;
+  top: 0;
+}
+
+.modal-map p {
+  margin: 0;
+}
+
+.modal-map iframe {
+  z-index: 1;
+}
+
 .modal-close {
   position: absolute;
   top: 9px;
