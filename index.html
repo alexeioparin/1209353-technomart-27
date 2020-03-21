@@ -295,7 +295,7 @@
                     <h3>Контакты</h3>
                     <p>Вы можете забрать товар сами, заехав в наш офис:</p>
                     <a href="#" class="modal-link"><img src="img/map.png" alt="Компания находится по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="300" height="158"></a>
-                    <a href="mail.html" class="button">Заблудились? Напишите нам!</a>
+                    <a href="mail.html" class="button modal-form-link">Заблудились? Напишите нам!</a>
                 </div>
               </div>
           </section>
@@ -349,10 +349,10 @@
             </div>
           </div>
       </footer>
-      <section class="modal modal-login">
-        <h2 class="visually-hidden">Форма логина</h2>
-        <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
-          <div class="login-form-main">
+      <section class="modal modal-question">
+        <h2 class="visually-hidden">Форма отправки вопросов</h2>
+        <form class="question-form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="question-form-main">
             <label>
               Ваше имя:
               <input type="text" name="name" value="" placeholder="Имя Фамилия" required>
@@ -366,7 +366,7 @@
               <textarea name="question" rows="2" cols="50" placeholder="В свободной форме"></textarea>
             </label>
           </div>
-          <div class="login-form-bottom">
+          <div class="question-form-bottom">
             <input type="submit" name="button" value="Отправить" class="button">
           </div>
         </form>
@@ -378,6 +378,7 @@
         <img src="img/map3.png" alt="адрес компании: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="970" height="476">
         <button type="button" name="close-window" class="modal-close"></button>
       </div>
-      <script src="js/script.js"></script>
+      <script src="js/qform.js"></script>
+      <script src="js/map.js"></script>
   </body>
 </html>

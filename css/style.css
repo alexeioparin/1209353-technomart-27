@@ -144,9 +144,11 @@ a {
 }
 
 .button-buy {
+  position: relative;
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #ffffff;
   background-color: #63a63e;
   width: 135px;
@@ -157,8 +159,20 @@ a {
   border-radius: 3px;
 }
 
+.button-buy::before {
+  content: url(../img/cart.png);
+  position: absolute;
+  left: 13px;
+  top: 11px;
+  opacity: 0.3;
+}
+
 .button-buy:hover {
   background-color: #5fbb2d;
+}
+
+.button-buy:hover::before {
+  opacity: 1;
 }
 
 .button-buy:active {
@@ -170,6 +184,7 @@ a {
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
   color: #32425c;
   background-color: #ffffff;
   border: solid 3px #63a63e;
@@ -478,6 +493,11 @@ a.complete:active {
   text-align: center;
   line-height: 60px;
   padding: 0 30px;
+}
+
+.nav-list a:focus {
+  outline: none;
+  color: #ffd180;
 }
 
 a.company-a {
@@ -1959,7 +1979,7 @@ span.label-new {
 
 
 
-.modal-login {
+.modal-question {
   display: none;
   width: 620px;
   min-height: 430px;
@@ -1969,7 +1989,7 @@ span.label-new {
   border-top: 7px solid #ee3643;
 }
 
-.login-form-main {
+.question-form-main {
   margin: 50px 80px;
   margin-bottom: 0;
   display: flex;
@@ -1977,11 +1997,11 @@ span.label-new {
   flex-wrap: wrap;
 }
 
-.login-form-main label {
+.question-form-main label {
   margin-bottom: 20px;
 }
 
-.modal-login label {
+.modal-question label {
   font-family: 'Cuprum', Arial, sans-serif;
   color: #000000;
   font-size: 18px;
@@ -1990,7 +2010,7 @@ span.label-new {
   width: 220px;
 }
 
-.modal-login input,
+.modal-question input,
 .login-textarea textarea {
   width: 100%;
   min-height: 38px;
@@ -2008,25 +2028,25 @@ span.label-new {
   max-width: 100%;
 }
 
-.modal-login input:hover,
+.modal-question input:hover,
 .login-textarea textarea:hover {
   border-color: #b5b5b5;
 }
 
-.modal-login input:focus,
+.modal-question input:focus,
 .login-textarea textarea:focus {
   border-color: #ee3643;
   outline: none;
 }
 
-.login-form-bottom {
+.question-form-bottom {
   padding: 37px 80px;
   background-color: #f4f4f4;
   width: 100%;
   margin-top: 15px;
 }
 
-.modal-login input[type="submit"] {
+.modal-question input[type="submit"] {
   border: none;
   margin: 0;
   padding: 0;
@@ -2127,4 +2147,14 @@ label.login-textarea {
 
 .modal-show {
   display: block;
+  animation: bounce 0.4s;
+}
+
+@keyframes bounce {
+  0% {
+    top: -430px;
+  }
+  100% {
+    top: 200px;
+  }
 }
